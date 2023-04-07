@@ -1,6 +1,6 @@
-// describe("describe", function () {
-//   it("test", function () {});
-// });
+describe("describe", function () {
+  it("test", function () {});
+});
 
 let assert = chai.assert;
 
@@ -29,7 +29,7 @@ describe("validateEmail", function () {
       assert.equal(validateEmail("emai"), false);
     });
     it("should contain only one symbol '@'", function () {
-      assert.equal(validateEmail("email@gmail"), false);
+      assert.equal(validateEmail("email@gma@il"), false);
     });
     it("should contain '.'", function () {
       assert.isTrue(validateEmail("e.mail@gmail.com"), "valid email");
